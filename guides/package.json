@@ -30,6 +30,7 @@
     "gatsby-remark-prismjs": "^3.3.12",
     "gatsby-remark-smartypants": "^2.0.6",
     "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-source-github-api": "^0.2.1",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.4",
     "lodash.kebabcase": "^4.1.1",

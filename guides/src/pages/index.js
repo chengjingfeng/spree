@@ -4,7 +4,6 @@ import * as React from 'react'
 // --- Components
 import Layout from 'components/Layout'
 import Section from 'components/Section'
-import Alert from 'components/helpers/Alert'
 
 /**
  * Component

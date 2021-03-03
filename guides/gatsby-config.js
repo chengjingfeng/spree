@@ -142,6 +142,31 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399'
       }
+    },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        // token: required by the GitHub API
+        token: '2022c47e730b9461de4313a7c97c9ccb9940613b',
+
+        // GraphQLquery: defaults to a search query
+        graphQLQuery: `query {
+          organization(login: "spree-contrib") {
+            repositories(first: 100) {
+              edges {
+                node {
+                  name
+                  description
+                  url
+                  stargazerCount
+                  updatedAt
+                  isArchived
+                }
+              }
+            }
+          }
+        }`
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline

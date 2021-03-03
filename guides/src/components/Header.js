@@ -72,6 +72,7 @@ export default class Header extends React.PureComponent {
 
           <nav className="h-100 w-100 tr dn flex-l items-center justify-end">
             <NavItem text="API" url="/api/" isActive={this.isActive('api')} />
+            <NavItem text="Extensions" url="/extensions" isActive={this.isActive('extensions')} />
             <NavItem
               text="Developer"
               isActive={this.isActive('developer')}
